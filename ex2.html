@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular de înregistrare animale</title>
+    <link rel="stylesheet" href="ex2.css">
+</head>
+<body>
+
+    <h1>Formular de înregistrare animale</h1>
+
+    <p>
+        Completați formularul de mai jos pentru a înregistra animalul dumneavoastră 
+        la clinica noastră veterinară. 
+    </p>
+
+    <form action="#" method="post">
+        <label for="numeStapan">Nume stapan:</label><br>
+        <input type="text" id="numeStapan" name="numeStapan" required><br><br>
+
+        <label for="telefon">Telefon:</label><br>
+        <input type="text" id="telefon" name="telefon" required><br><br>
+
+        <label for="numeAnimal">Nume animal:</label><br>
+        <input type="text" id="numeAnimal" name="numeAnimal" required><br><br>
+
+        <label for="specie">Specie:</label><br>
+        <select id="specie" name="specie">
+            <option value="caine">Caine</option>
+            <option value="pisica">Pisica</option>
+            <option value="iepure">Iepure</option>
+            <option value="altul">Altul</option>
+        </select><br><br>
+
+        <label>Sexul animalului:</label><br>
+        <input type="radio" id="mascul" name="sex" value="Mascul">
+        <label for="mascul">Mascul</label>
+        <input type="radio" id="femela" name="sex" value="Femelă">
+        <label for="femela">Femela</label><br><br>
+
+        <label>Servicii dorite:</label><br>
+        <input type="checkbox" id="vaccinare" name="servicii" value="Vaccinare">
+        <label for="vaccinare">Vaccinare</label><br>
+        <input type="checkbox" id="deparazitare" name="servicii" value="Deparazitare">
+        <label for="deparazitare">Deparazitare</label><br>
+        <input type="checkbox" id="consult" name="servicii" value="Consult">
+        <label for="consult">Consult</label><br><br>
+
+        <label for="observatii">Observatii:</label><br>
+        <textarea id="observatii" name="observatii" rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Trimite">
+        <input type="reset" value="Reseteaza">
+    </form>
+
+</body>
+</html>
