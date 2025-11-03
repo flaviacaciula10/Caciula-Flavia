@@ -1,0 +1,79 @@
+/* Stilizare generală pentru paginile de categorie (Mascara, Rujuri, etc.) */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8fafc; /* Fundal deschis */
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+h2 {
+    color: #d946ef; 
+    text-align: center;
+    border-bottom: 2px solid #e9d5ff;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e5e7eb;
+    margin: 40px 0;
+}
+
+.categorii-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.categorii-container p {
+    width: 45%; 
+    text-align: center;
+    margin: 0; 
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efect de hover */
+.categorii-container p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Stilizare link și text */
+.categorii-container a {
+    text-decoration: none;
+    color: #6d28d9;
+    display: block; 
+    font-weight: 700;
+}
+
+/* Stilizare imagini */
+.categorii-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Stilizare pentru ecrane mici (Mobile: o singură coloană) */
+@media (max-width: 650px) {
+    .categorii-container p {
+        width: 100%; /* O singură coloană pe ecrane mici */
+    }
+}
