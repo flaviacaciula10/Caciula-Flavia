@@ -1,0 +1,76 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: #1e88e5;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+#inputActivitate {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 110px);
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+#btnAdauga {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+}
+
+#btnAdauga:hover {
+    background-color: #45a049;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 20px 0;
+}
+
+#listaActivitati {
+    list-style: none;
+    padding: 0;
+}
+
+#listaActivitati li {
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    background-color: #e3f2fd;
+    border-left: 5px solid #1e88e5;
+    border-radius: 4px;
+    word-wrap: break-word;
+}

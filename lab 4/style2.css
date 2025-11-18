@@ -1,0 +1,89 @@
+/* Stiluri generale pentru corp*/
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Stil pentru titlul principal */
+h1 {
+    color: #007bff;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Stil pentru cardul produsului */
+.card-produs {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Stil pentru titlul produsului */
+.card-produs h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Stil pentru butonul de afisare/ascundere detalii */
+#btnDetalii {
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-bottom: 20px;
+}
+
+#btnDetalii:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+#btnDetalii:active {
+    transform: translateY(1px);
+}
+
+/* Stil pentru sectiunea de detalii */
+#detalii {
+    margin-top: 15px;
+    padding: 20px;
+    border-top: 1px dashed #ccc;
+    text-align: left;
+    transition: all 0.4s ease-out; }
+
+#detalii p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.ascuns {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    opacity: 0;
+    border-top: none !important;
+}
+
+/* Stil pentru data produsului */
+#dataProdus {
+    font-weight: bold;
+    color: #007bff;
+}
