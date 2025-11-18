@@ -1,0 +1,392 @@
+/*stilizare pentru paginile principale*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2 {
+    color: #D81B60;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Navigare */
+
+.navigare-principala {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigare-actiuni, .navigare-categorii {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.navigare-actiuni a, .navigare-categorii a {
+    color: #D81B60;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.navigare-categorii {
+    gap: 10px;
+}
+
+.navigare-categorii a:hover, .navigare-actiuni a:hover {
+    background-color: #ffebee;
+    text-decoration: underline;
+}
+
+.buton-acasa, .buton-cos {
+    border: 1px solid #D81B60;
+    margin-right: 15px;
+}
+
+/* Stiluri Formulare */
+
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #D81B60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #A00040;
+}
+
+form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form a {
+    color: #D81B60;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+/* Stiluri Categorii  */
+
+.categorii-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.categorii-container p {
+    flex: 0 1 calc(50% - 10px); 
+    text-align: center;
+    margin: 0;
+    min-width: 150px;
+    margin-bottom: 20px; 
+}
+
+.categorii-container a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+}
+
+.categorii-container a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    color: #D81B60;
+}
+
+.categorii-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+/* stiluri cos */
+
+.continut-cos {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Tabelul Cosului */
+.tabel-cos table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.tabel-cos th, .tabel-cos td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.tabel-cos th {
+    background-color: #ffebee;
+    color: #D81B60;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.tabel-cos tr:hover {
+    background-color: #fcfcfc;
+}
+
+/* Campul de Cantitate */
+.camp-cantitate {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Butonul de stergere */
+.buton-sterge {
+    background-color: #ff3860; 
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+}
+
+.buton-sterge:hover {
+    background-color: #d10020;
+}
+
+/* Randul Totalului General (ADAUGAT/MODIFICAT) */
+.rand-total {
+    background-color: #D81B60;
+    color: white;
+    font-size: 1.2em;
+}
+
+.rand-total td {
+    border-bottom: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.total-general {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Butoanele de Actiune (Plaseaza Comanda, Continua Cumparaturile) */
+.optiuni-cos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.buton-comanda {
+    padding: 15px 30px;
+    background-color: #D81B60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buton-comanda:hover {
+    background-color: #A00040;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buton-continuare {
+    color: #333;
+    text-decoration: none;
+    padding: 15px 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.buton-continuare:hover {
+    background-color: #e0e0e0;
+}
+
+/* MEdia queries*/
+
+@media (max-width: 900px) {
+    .navigare-principala {
+        flex-direction: column; 
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navigare-actiuni {
+        margin-bottom: 10px;
+    }
+
+    .navigare-categorii {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .navigare-categorii a {
+        padding: 5px 8px;
+    }
+
+    /* Tabel responsive pentru cos */
+    .tabel-cos table, .tabel-cos thead, .tabel-cos tbody, .tabel-cos th, .tabel-cos td, .tabel-cos tr {
+        display: block;
+    }
+
+    .tabel-cos thead {
+        display: none;
+    }
+
+    .tabel-cos tr {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    /* Adaugat clasa de stilizare pentru produsele din cos */
+    .tabel-cos .articol-cos {
+         margin-bottom: 10px;
+         border: 1px solid #ddd;
+         border-radius: 8px;
+         overflow: hidden;
+         display: block; /* Asiguram ca ramane block pentru vizualizarea responsiva */
+    }
+
+    .tabel-cos td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+
+    .tabel-cos td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+        color: #D81B60;
+    }
+
+    /* Etichete pentru responsive (trebuie să corespundă structurii din JS) */
+    .articol-cos td:nth-of-type(1)::before { content: "Produs:"; }
+    .articol-cos td:nth-of-type(2)::before { content: "Pret Unitar:"; }
+    .articol-cos td:nth-of-type(3)::before { content: "Cantitate:"; }
+    .articol-cos td:nth-of-type(4)::before { content: "Total:"; }
+    .articol-cos td:nth-of-type(5)::before { content: "Actiuni:"; }
+    
+    /* Stiluri pentru randul de total (ramane neschimbat, dar adaptat la noua structura) */
+    .rand-total {
+        display: table-row; /* Fortam sa ramana ca rand normal in responsive */
+    }
+
+    .rand-total td {
+        padding-left: 15px;
+        text-align: left;
+    }
+    
+    /* Asiguram ca totalul general este aliniat corect in responsive */
+    .rand-total .total-general {
+        text-align: right; 
+    }
+
+    .optiuni-cos {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .buton-comanda, .buton-continuare {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        margin: 20px;
+        padding: 20px;
+    }
+    .categorii-container p {
+        flex: 0 1 100%;
+        min-width: 100px;
+    }
+}
