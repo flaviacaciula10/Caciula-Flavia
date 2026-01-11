@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Magazin Machiaj</title>
+    <link rel="stylesheet" href="stilizare pagini produse.css">
+</head>
+
+  <?php include '../header.php'; ?>
+
+<body>
+    
+  <h2>Produsele din categoria : Fond de ten</h2>
+  <div class="categorii-container">
+  <p class="produs-card">
+    <a href="fond de ten/fond de ten a.html">
+      <img src="fond de ten/maybelline.jpg" alt="Fond de ten Maybelline" width="200"><br>
+      Maybelline
+      <span class="descriere-produs">Fond de ten matifiant, rezistent la transfer, SPF 20.</span>
+      <span class="pret-produs">59.99 RON</span>
+    </a>
+    <button class="buton-cos-produs" data-id="maybelline-ft" data-pret="59.99">Adauga in Cos</button>
+  </p>
+
+  <p class="produs-card">
+    <a href="fond de ten/fond de ten b.html">
+      <img src="fond de ten/rimmel.jpg" alt="Fond de ten Rimmel" width="200"><br>
+      Rimmel
+      <span class="descriere-produs">Acoperire naturala, efect de stralucire. Ideal pentru ten uscat.</span>
+      <span class="pret-produs">45.50 RON</span>
+    </a>
+    <button class="buton-cos-produs" data-id="rimmel-ft" data-pret="45.50">Adauga in Cos</button>
+  </p>
+
+  <p class="produs-card">
+    <a href="fond de ten/fond de ten c.html">
+      <img src="fond de ten/l'oreal.jpg" alt="Fond de ten L'Oreal" width="200"><br>
+      L'Oreal
+      <span class="descriere-produs">Formula lejera, 24h rezistenta, testat dermatologic.</span>
+      <span class="pret-produs">79.00 RON</span>
+    </a>
+    <button class="buton-cos-produs" data-id="loreal-ft" data-pret="79.00">Adauga in Cos</button>
+  </p>
+
+  <p class="produs-card">
+    <a href="fond de ten/fond de ten d.html">
+      <img src="fond de ten/lancome.jpg" alt="Fond de ten Lancome" width="200"><br>
+      Lancome
+      <span class="descriere-produs">Fond de ten premium cu efect de lifting si hidratare.</span>
+      <span class="pret-produs">145.99 RON</span>
+    </a>
+    <button class="buton-cos-produs" data-id="lancome-ft" data-pret="145.99">Adauga in Cos</button>
+  </p>
+  </div>
+  <hr>
+    <script src="../cos.js"></script>
+</body>
+</html>
