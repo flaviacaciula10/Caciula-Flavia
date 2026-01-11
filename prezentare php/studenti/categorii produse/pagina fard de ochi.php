@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Magazin Machiaj</title>
+   <link rel="stylesheet" href="stilizare pagini produse.css">
+</head>
+
+  <?php include '../header.php'; ?>
+  
+<body>
+
+  <h2>Produsele din categoria  : Farduri pentru ochi</h2>
+  <div class="categorii-container">
+  <p>
+    <a href="fard ochi/fard a.html">
+      <img src="fard ochi/maybelline.jpg" alt="Fond de ten" width="200"><br>
+      Maybelline
+    </a>
+  </p>
+
+  <p>
+    <a href="fard ochi/fard b.html">
+      <img src="fard ochi/rimmel.jpg" alt="Ruj" width="200"><br>
+      Rimmel
+    </a>
+  </p>
+
+  <p>
+    <a href="fard ochi/fard c.html">
+      <img src="fard ochi/l'oreal.jpg" alt="Fard de pleoape" width="200"><br>
+      L'Oreal
+    </a>
+  </p>
+
+  <p>
+    <a href="fard ochi/fard d.html">
+      <img src="fard ochi/lancome.jpg" alt="Mascara" width="200"><br>
+      Lancome
+    </a>
+  </p>
+  </div>
+  <hr>
+</body>
+</html>
